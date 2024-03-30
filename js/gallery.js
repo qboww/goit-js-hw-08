@@ -1,4 +1,4 @@
-import { images } from "/js/images-array.js";
+import { images } from "./js/images-array.js";
 
 const galleryMarkup = images
   .map(({ preview, original, description }) => {
