@@ -29,8 +29,8 @@ body {
 }
 
 .gallery-image {
-  width: 360px;
-  height: 200px;
+  max-width: 360px;
+  height: auto;
   object-fit: cover;
   transition: 0.5s ease;
 }

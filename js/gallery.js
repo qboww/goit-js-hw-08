@@ -82,10 +82,16 @@ const galleryMarkup = images
   .join("");
 
 const openLightBox = (event) => {
+  event.preventDefault();
+
   if (event.target.nodeName !== "IMG") return;
 
   basicLightbox
-    .create(`<img src="${event.target.getAttribute("data-source")}"/>`)
+    .create(
+      `<img src="${event.target.getAttribute(
+        "data-source"
+      )}" alt="${event.target.getAttribute("alt")}"/>`
+    )
     .show();
 };
 
